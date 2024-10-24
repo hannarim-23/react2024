@@ -1,0 +1,31 @@
+.header{
+  background-color:rgb(255, 232, 232);
+  align-items: center;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  display: block;
+  height: 100%;
+  align-items: center;
+  background-color:green;
+
+}
+
+.logo img{
+  height: 100%;
+}
+
+.headerNavBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  margin-right: 40px;
+  list-style-type: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  color: black;
+}

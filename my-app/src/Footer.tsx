@@ -1,11 +1,14 @@
+import './footer.css';
+
 function Footer() {
   return (
-    <nav>
+    <div className='footer wrapper'>
+      <nav className='footerNavBar'>
       <li><a href="/">Page1</a></li>
       <li><a href="/Page2">Page2</a></li>
       <li><a href="/Page3">Page3</a></li>
-    </nav>
-
+      </nav>
+    </div>
   );
 }
 

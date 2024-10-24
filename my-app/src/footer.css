@@ -1,0 +1,16 @@
+.footer{
+  background-color:rgb(255, 232, 232);
+  height: 100px;
+  padding-bottom: 20px;
+  }
+
+  
+  .footerNavBar{
+    width: 300px;
+    margin-right: 40px;
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: black;
+  }
+  
