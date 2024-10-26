@@ -1,31 +1,30 @@
-.header{
-  background-color:rgb(255, 232, 232);
+.header {
+  background-color: rgb(255, 232, 232);
   align-items: center;
   height: 100px;
   display: flex;
   justify-content: space-between;
 }
 
-.logo{
+.logo {
   display: block;
   height: 100%;
   align-items: center;
-  background-color:green;
-
+  background-color: green;
 }
 
-.logo img{
+.logo img {
   height: 100%;
 }
 
-.headerNavBar{
+.headerNavBar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 300px;
   margin-right: 40px;
   list-style-type: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 25px;
   color: black;
 }

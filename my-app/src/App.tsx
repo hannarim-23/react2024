@@ -1,37 +1,40 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
-import './main.css'
-import Header from './Header';
-import Home from './pages/Home';
-import Page2 from './pages/Page2';
-import Page3 from './pages/Page3';
-import Error from './pages/error';
-import Footer from './Footer';
-//import Main from './Main';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import "./template/main/main.css";
 
+import Header from "./template/header/Header";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Error from "./pages/Error";
+import Footer from "./template/footer/Footer";
 
+import Navigation from "./components/navigation";
+//import AppRouter from "./components/navigation";
 
 function App() {
   return (
-    <div >
-    <Header />
+    <div>
+      <Header />
+      <main className="main wrapper">
+        {
+          <Router>
+            <Navigation />
+            {
+              <Routes>
+                <Route path="/" Component={Home} />
+                <Route path="/about" Component={About} />
+                <Route path="/services" Component={Services} />
+                <Route path="*" Component={Error} />
+              </Routes>
+            }
+          </Router>
+        }
+      </main>
 
-
-    <main className='main wrapper'>
-    <Router>
-      <Routes>
-        <Route path='/' Component={Home} />
-        <Route path='/Page2' Component={Page2} />
-        <Route path='/Page3' Component={Page3} />
-        <Route path='*' Component={Error} />
-      </Routes>
-    </Router>
-    </main>
-
-    <Footer />
+      <Footer />
     </div>
-
   );
 }
 

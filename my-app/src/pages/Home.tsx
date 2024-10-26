@@ -1,11 +1,12 @@
-function Home() {
+import React from "react";
+
+const Home: React.FC = () => {
   return (
-    <>
-     {/* <h1>Заголовок 1</h1>*/} 
-     Заголовок 1
-    
-    </>
+    <div>
+      <h2>Home Page</h2>
+      <p>Welcome to the Home Page!</p>
+    </div>
   );
-}
+};
 
 export default Home;
