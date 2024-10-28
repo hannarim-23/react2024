@@ -10,26 +10,18 @@ import Services from "./pages/Services";
 import Error from "./pages/Error";
 import Footer from "./template/footer/Footer";
 
-import Navigation from "./components/navigation";
-//import AppRouter from "./components/navigation";
-
 function App() {
   return (
     <div>
       <Header />
       <main className="main wrapper">
         <div>
-          <Navigation />
-
-
-{/*           {
-            <Routes>
-              <Route path="/" Component={Home} />
-              <Route path="/about" Component={About} />
-              <Route path="/services" Component={Services} />
-              <Route path="*" Component={Error} />
-            </Routes>
-          } */}
+          <Routes>
+            <Route path="/" Component={Home} />
+            <Route path="/about" Component={About} />
+            <Route path="/services" Component={Services} />
+            <Route path="*" Component={Error} />
+          </Routes>
         </div>
       </main>
 

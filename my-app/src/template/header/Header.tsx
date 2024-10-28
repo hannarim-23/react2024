@@ -1,6 +1,6 @@
 import logo from "../../images/logo.jpg";
 import "./header.css";
-import { Link } from "react-router-dom";
+import Navigation from "../../components/navigation";
 
 const Header: React.FC = () => {
   return (
@@ -9,17 +9,7 @@ const Header: React.FC = () => {
         <img src={logo} alt="Logo" />
       </div>
       <div >
-        <nav className="headerNavBar">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/services">Services</Link>
-          </li>
-        </nav>
+      <Navigation />
       </div>
     </div>
   );
