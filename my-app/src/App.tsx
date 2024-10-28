@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import "./template/main/main.css";
 
@@ -18,19 +18,19 @@ function App() {
     <div>
       <Header />
       <main className="main wrapper">
-        {
-          <Router>
-            <Navigation />
-            {
-              <Routes>
-                <Route path="/" Component={Home} />
-                <Route path="/about" Component={About} />
-                <Route path="/services" Component={Services} />
-                <Route path="*" Component={Error} />
-              </Routes>
-            }
-          </Router>
-        }
+        <div>
+          <Navigation />
+
+
+{/*           {
+            <Routes>
+              <Route path="/" Component={Home} />
+              <Route path="/about" Component={About} />
+              <Route path="/services" Component={Services} />
+              <Route path="*" Component={Error} />
+            </Routes>
+          } */}
+        </div>
       </main>
 
       <Footer />

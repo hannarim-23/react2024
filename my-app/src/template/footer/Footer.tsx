@@ -1,18 +1,19 @@
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
     <div className="footer wrapper">
       <div className="footer__container">
         <nav className="footer__navBar">
-          <li>
-            <a href="/">Home</a>
+        <li>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="/services">Services</a>
+            <Link to="/services">Services</Link>
           </li>
         </nav>
         <div className="footer__contacts">
